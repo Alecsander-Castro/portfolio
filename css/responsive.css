@@ -1,0 +1,99 @@
+@media screen and (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+  }
+  .header {
+    grid-column: 1 / span 5;
+  }
+
+  nav a {
+    padding-left: 2rem;
+  }
+
+  .sessoes {
+    grid-column: 2 / span 5;
+    grid-row: 2;
+  }
+  .images {
+    display: flex;
+    justify-content: end;
+  }
+  .images img {
+    position: relative;
+
+    bottom: 5rem;
+  }
+
+  .text-content {
+    font-size: 1.5rem;
+    position: relative;
+    top: 10rem;
+    right: 5rem;
+    width: 30rem;
+    flex-direction: column;
+  }
+
+  .side-bar {
+    position: fixed;
+    grid-column: 1;
+    grid-row: 2;
+    max-height: 33rem;
+  }
+
+  .icons {
+    position: relative;
+    display: grid;
+    top: 10rem;
+  }
+
+  .icons img {
+    position: relative;
+    right: 3rem;
+    padding-bottom: 5rem;
+    margin: 0 5rem;
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills-title {
+    display: block;
+    font-size: 1.5rem;
+    margin: 5rem 24rem;
+  }
+
+  .projetos h1 {
+    display: block;
+    font-size: 1.5rem;
+    margin: 0 23rem;
+    margin-top: 5rem;
+  }
+
+  .projetos p {
+    display: block;
+    margin: 0 23rem;
+    margin-top: 5rem;
+  }
+
+  .contact h1 {
+    display: block;
+    margin: 0 23rem;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  .form {
+    margin: 0 10rem;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .images img {
+    position: relative;
+    right: 10rem;
+    bottom: 5rem;
+  }
+}
