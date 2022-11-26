@@ -62,22 +62,27 @@
   .skills-title {
     display: block;
     font-size: 1.5rem;
-    margin: 5rem 24rem;
+    margin: 5rem 23rem;
   }
-
-  .projetos h1 {
+  .lista-projetos div {
+    max-width: 45rem;
+  }
+  .lista-projetos {
+    display: flex;
+    flex-direction: column;
+  }
+  .lista-projetos img {
+    max-width: 50rem;
+  }
+  .lista-projetos p,
+  .lista-projetos a {
+    font-size: 1rem;
+  }
+  .projetos-title {
     display: block;
     font-size: 1.5rem;
-    margin: 0 23rem;
-    margin-top: 5rem;
+    margin: 5rem 20rem;
   }
-
-  .projetos p {
-    display: block;
-    margin: 0 23rem;
-    margin-top: 5rem;
-  }
-
   .contact h1 {
     display: block;
     margin: 0 23rem;
@@ -95,5 +100,18 @@
     position: relative;
     right: 10rem;
     bottom: 5rem;
+  }
+  .projetos-title,
+  .skills-title {
+    display: block;
+    font-size: 1.5rem;
+    margin: 5rem 24rem;
+  }
+
+  .lista-projetos div {
+    max-width: 56rem;
+  }
+  .lista-projetos img {
+    max-width: 70rem;
   }
 }

@@ -143,14 +143,58 @@ nav a:hover {
   object-fit: contain;
 }
 
-.projetos h1 {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
+.lista-projetos {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
 }
-.projetos p {
+.lista-projetos h1 {
   display: flex;
   justify-content: center;
+}
+.lista-projetos a {
+  display: flex;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.lista-projetos a:hover {
+  color: var(--secondary-color);
+}
+.lista-projetos span {
+  color: var(--secondary-color);
+}
+.lista-projetos p {
+  margin-top: 1rem;
+  font-size: 0.7rem;
+}
+
+.lista-projetos div {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 1.5rem;
+  min-height: 15rem;
+  max-width: 20rem;
+  transition: 0.5s;
+}
+.lista-projetos div:hover {
+  transform: scale(0.9);
+}
+
+.lista-projetos img {
+  display: flex;
+  width: 100%;
+  max-width: 20rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.projetos-title {
+  margin-top: 2rem;
 }
 
 .contact {
